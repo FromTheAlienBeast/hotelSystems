@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<web-app version="2.5" 
+	xmlns="http://java.sun.com/xml/ns/javaee" 
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" 
+	xsi:schemaLocation="http://java.sun.com/xml/ns/javaee 
+	http://java.sun.com/xml/ns/javaee/web-app_2_5.xsd">
+  <display-name></display-name>
+  <servlet>
+    <description>This is the description of my J2EE component</description>
+    <display-name>This is the display name of my J2EE component</display-name>
+    <servlet-name>FoodTypeServlet</servlet-name>
+    <servlet-class>cn.servlet.FoodTypeServlet</servlet-class>
+  </servlet>
+  <servlet>
+    <description>This is the description of my J2EE component</description>
+    <display-name>This is the display name of my J2EE component</display-name>
+    <servlet-name>DinnerTableServlet</servlet-name>
+    <servlet-class>cn.servlet.DinnerTableServlet</servlet-class>
+  </servlet>
+  <servlet>
+    <description>This is the description of my J2EE component</description>
+    <display-name>This is the display name of my J2EE component</display-name>
+    <servlet-name>DetalServlet</servlet-name>
+    <servlet-class>cn.servlet.DetalServlet</servlet-class>
+  </servlet>
+  <servlet>
+    <description>This is the description of my J2EE component</description>
+    <display-name>This is the display name of my J2EE component</display-name>
+    <servlet-name>CarServlet</servlet-name>
+    <servlet-class>cn.servlet.CarServlet</servlet-class>
+  </servlet>
+  <servlet>
+    <description>This is the description of my J2EE component</description>
+    <display-name>This is the display name of my J2EE component</display-name>
+    <servlet-name>OrdersServlet</servlet-name>
+    <servlet-class>cn.servlet.OrdersServlet</servlet-class>
+  </servlet>
+
+
+
+
+
+
+  <servlet-mapping>
+    <servlet-name>FoodTypeServlet</servlet-name>
+    <url-pattern>/servlet/FoodTypeServlet</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+    <servlet-name>DinnerTableServlet</servlet-name>
+    <url-pattern>/servlet/DinnerTableServlet</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+    <servlet-name>DetalServlet</servlet-name>
+    <url-pattern>/servlet/DetalServlet</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+    <servlet-name>CarServlet</servlet-name>
+    <url-pattern>/servlet/CarServlet</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+    <servlet-name>OrdersServlet</servlet-name>
+    <url-pattern>/servlet/OrdersServlet</url-pattern>
+  </servlet-mapping>
+  <!-- 默认首页展示servlet -->
+  <!-- 跳转到首页展示，不需要加/ -->	
+  <welcome-file-list>
+    <welcome-file>hotel.jsp</welcome-file>
+  </welcome-file-list>
+</web-app>
